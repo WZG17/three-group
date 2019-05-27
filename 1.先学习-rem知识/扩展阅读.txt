@@ -1,0 +1,2 @@
+rem是如何实现自适应布局的？  http://caibaojian.com/web-app-rem.html
+使用Flexible实现手淘H5页面的终端适配   https://github.com/amfe/article/issues/17

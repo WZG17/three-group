@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+       /* (function(){
+            var docEl = document.documentElement
+
+            // set 1rem = viewWidth / 10
+            function setRemUnit () {
+                var rem = docEl.clientWidth / 10;
+                docEl.style.fontSize = rem + 'px';
+            }
+
+            setRemUnit()
+
+            // reset rem unit on page resize
+            window.addEventListener('resize', setRemUnit)
+            window.addEventListener('pageshow', function (e) {
+            if (e.persisted) {
+                setRemUnit()
+            }
+            });
+        })();*/
+		</script>
+		<script src="rem.js"></script>		
+		<title>rem方案布局</title>
+		<link rel="stylesheet" href="rem.css">
+		<!--
+			相对于根元素html中font-size:(设计师给的设计稿尺寸宽度 /16) = 1rem
+		示例: 量取一块设计图尺寸PX/(设计稿尺寸640px/16)=换算的rem值
+		      80px/(640px/16)=2rem
+		-->
+	</head>
+	<body> <!-- 字体大小不要继承根html,否则会很大,最好body里根据dpr统一动态给, 其它不同的地方可单独给px-->
+     <div class="header">
+     	头部 - 固定
+     </div>
+     <div class="main"> 
+     	<div class="item">字体大小</div>
+     	<div class="item">字体大小</div>
+     	<div class="item">字体大小</div>
+     	<div class="item">字体大小</div>
+     	<div class="item">字体大小</div>
+     	<div class="item">字体大小</div>
+     </div>
+     <div class="footer">
+     	底部 - 固定
+     </div>
+	</body>
+</html>
